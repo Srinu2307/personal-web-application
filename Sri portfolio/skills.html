@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Srinivasulu Kamarthi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat fixed, #0f2027;
+      min-height: 100vh;
+    }
+    .cyber-glow {
+      box-shadow: 0 0 16px #00ffe7, 0 0 32px #00ffe7;
+    }
+    .cyber-border {
+      border: 2px solid #00ffe7;
+      border-radius: 0.75rem;
+      transition: border-color 0.3s;
+    }
+    .cyber-border:hover {
+      border-color: #ff00c8;
+    }
+    .cyber-text {
+      text-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe7;
+    }
+    .cyber-icon {
+      color: #00ffe7;
+      filter: drop-shadow(0 0 6px #00ffe7);
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-[#151a23] bg-opacity-90 shadow-lg z-10 cyber-glow">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold cyber-text">Srinivasulu Kamarthi</div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Home</a>
+            <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">About</a>
+            <a href="certifications.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Certifications</a>
+            <a href="skills.html" class="px-3 py-2 text-sm font-medium text-cyan-400 border-b-2 border-cyan-400">Skills</a>
+            <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button class="mobile-menu-button text-gray-300 hover:text-cyan-400">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 px-4 bg-black bg-opacity-70">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-4xl font-bold cyber-text mb-4">My Skills</h1>
+      <p class="text-xl text-cyan-200 max-w-2xl mx-auto">
+        <span class="cyber-text">Ethical Hacker & Cybersecurity Enthusiast</span><br>
+        Explore my technical expertise in programming, cloud, DevOps, and ethical hacking.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Grid -->
+  <section class="py-12 px-4 bg-black bg-opacity-60">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Skill Card: Python -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fab fa-python fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-yellow-900 text-yellow-200 rounded-full text-xs font-medium mb-2">Programming</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">Python</h3>
+          <p class="text-cyan-100 mb-4">
+            Advanced in Python for scripting, automation, and penetration testing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill Card: Ethical Hacking -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fas fa-user-secret fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-pink-900 text-pink-200 rounded-full text-xs font-medium mb-2">Cybersecurity</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">Ethical Hacking</h3>
+          <p class="text-cyan-100 mb-4">
+            Skilled in penetration testing, vulnerability assessment, and ethical hacking tools (Kali Linux, Metasploit, Nmap).
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill Card: Cloud -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fas fa-cloud fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs font-medium mb-2">Cloud</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">Google Cloud Platform and Amazon Web Servies Platform</h3>
+          <p class="text-cyan-100 mb-4">
+            Hands-on with GCP for secure,creating instances,buckets craeation,scalable deployments and cloud security practices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill Card: DevOps -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fas fa-cogs fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-green-900 text-green-200 rounded-full text-xs font-medium mb-2">DevOps</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">DevOps Tools</h3>
+          <p class="text-cyan-100 mb-4">
+             Docker, automation, and integrating security in the DevOps pipeline.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill Card: Networking -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fas fa-network-wired fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-purple-900 text-purple-200 rounded-full text-xs font-medium mb-2">Networking</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">Network Security</h3>
+          <p class="text-cyan-100 mb-4">
+            Understanding of TCP/IP, firewalls, IDS/IPS, and secure network architectures.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skill Card: Linux -->
+      <div class="bg-[#181f2a] cyber-border cyber-glow overflow-hidden">
+        <div class="flex items-center justify-center h-48 bg-black bg-opacity-60">
+          <i class="fab fa-linux fa-3x cyber-icon"></i>
+        </div>
+        <div class="p-6">
+          <span class="inline-block px-2 py-1 bg-gray-900 text-gray-200 rounded-full text-xs font-medium mb-2">Operating Systems</span>
+          <h3 class="text-xl font-semibold cyber-text mb-2">Kali Linux</h3>
+          <p class="text-cyan-100 mb-4">
+            working compatable in kali Linux administration & bash shell scripting.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.querySelector(".mobile-menu-button").addEventListener("click", () => {
+      document.querySelector(".mobile-menu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

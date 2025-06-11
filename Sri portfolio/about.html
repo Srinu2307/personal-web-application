@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Srinivasulu Kamarthi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027 0%, #232946 100%);
+      min-height: 100vh;
+    }
+    .cyber-glow {
+      box-shadow: 0 0 16px #00ffe7, 0 0 32px #00ffe7, 0 0 64px #00ffe7;
+    }
+    .cyber-border {
+      border: 2px solid #00ffe7;
+      border-radius: 0.75rem;
+      transition: border-color 0.3s;
+    }
+    .cyber-border:hover {
+      border-color: #ff00c8;
+    }
+    .cyber-text {
+      text-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe7;
+    }
+    .cyber-icon {
+      color: #00ffe7;
+      filter: drop-shadow(0 0 6px #00ffe7);
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-[#151a23] bg-opacity-90 shadow-lg z-10 cyber-glow">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold cyber-text">Srinivasulu Kamarthi</div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Home</a>
+            <a href="about.html" class="px-3 py-2 text-sm font-medium text-cyan-400 border-b-2 border-cyan-400">About</a>
+            <a href="certifications.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Certifications</a>
+            <a href="skills.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Skills</a>
+            <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button class="mobile-menu-button text-gray-300 hover:text-cyan-400">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero Section -->
+  <section class="pt-32 pb-16 px-4 bg-gradient-to-r from-[#151a23] via-[#232946] to-[#151a23]">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Profile" class="mx-auto rounded-full w-32 h-32 border-4 border-cyan-400 shadow-lg cyber-glow mb-6">
+      <h1 class="text-4xl font-bold cyber-text mb-2">Srinivasulu Kamarthi</h1>
+      <p class="text-lg text-cyan-200 mb-4">Tech Enthusiast • Developer • Lifelong Learner</p>
+      <p class="text-cyan-100 max-w-2xl mx-auto">
+        Welcome to my digital domain! I am passionate about building impactful solutions using modern technologies. My journey spans web development, cloud computing, machine learning, and DevOps. I thrive in collaborative environments and am always eager to explore new frontiers in tech.
+      </p>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section class="py-12 px-4">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div class="bg-[#181f2a] cyber-border cyber-glow p-6">
+        <h2 class="text-2xl font-semibold cyber-text mb-4"><i class="fas fa-user-astronaut cyber-icon mr-2"></i>Background</h2>
+        <p class="text-cyan-100">
+          With a strong foundation in computer science, I specialize in Python, cloud platforms, and automation. I am dedicated to continuous learning and have completed multiple certifications to stay ahead in the tech landscape.
+        </p>
+      </div>
+      <div class="bg-[#181f2a] cyber-border cyber-glow p-6">
+        <h2 class="text-2xl font-semibold cyber-text mb-4"><i class="fas fa-bolt cyber-icon mr-2"></i>Interests</h2>
+        <ul class="list-disc list-inside text-cyan-100">
+          <li>Programming (Python, JavaScript, etc.)</li>
+          <li>Cloud Computing & DevOps</li>
+          <li>Machine Learning</li>
+          <li>Open Source Contribution</li>
+          <li>Tech Blogging & Community</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <a href="contact.html" class="inline-block px-8 py-3 bg-cyan-400 text-gray-900 font-semibold rounded cyber-glow hover:bg-cyan-300 transition">
+        <i class="fas fa-envelope mr-2"></i>Let's Connect
+      </a>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+    background-color: #111827;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+/* Hacker-style card hover effects */
+.recipe-card {
+    background-color: #1e1e2f;
+    border: 1px solid #2dd4bf;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 20px #22d3ee;
+}
+
+/* Terminal-style input and select */
+input, select {
+    background-color: #1f2937;
+    color: #a7f3d0;
+    border: 1px solid #10b981;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+select option {
+    background-color: #1f2937;
+}
+
+/* Form validation styles */
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+input.error {
+    border-color: #ef4444;
+}
+
+/* Hero section overlay (cyber style) */
+.hero-overlay {
+    background: linear-gradient(rgba(0, 255, 128, 0.15), rgba(0, 128, 255, 0.1));
+}
+
+/* Neon flicker animation for buttons */
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+    }
+}
+
+.btn-hover-animate {
+    transition: all 0.3s ease;
+    background-color: #10b981;
+    color: #0f172a;
+    animation: flicker 3s infinite;
+    box-shadow: 0 0 10px #10b981, 0 0 20px #0ea5e9 inset;
+}
+
+.btn-hover-animate:hover {
+    transform: translateY(-3px);
+    background-color: #059669;
+}
+
+/* Cyber-style grid container */
+.grid > div {
+    border: 1px dashed #22d3ee;
+    background-color: #1a1a2e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Cyber glowing headings */
+h1, h2, h3 {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #00f5ff;
+}
